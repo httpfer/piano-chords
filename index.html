@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordes de Piano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎹 Descubra as Notas do Acorde 🎼</h1>
+        <div class="clave-de-sol">𝄞</div>
+
+        <input type="text" id="acordeInput" class="acorde-input" placeholder="Digite um acorde (ex: Cmaj7, Dm, F#7)" />
+        <button id="btnCalcular">Mostrar Notas</button>
+
+        <div id="acordeResultado" class="acorde-display"></div>
+
+        <!-- Teclado Virtual -->
+        <div id="teclado">
+            <button class="nota" data-nota="C">C</button>
+            <button class="nota" data-nota="C#">C#</button>
+            <button class="nota" data-nota="D">D</button>
+            <button class="nota" data-nota="D#">D#</button>
+            <button class="nota" data-nota="E">E</button>
+            <button class="nota" data-nota="F">F</button>
+            <button class="nota" data-nota="F#">F#</button>
+            <button class="nota" data-nota="G">G</button>
+            <button class="nota" data-nota="G#">G#</button>
+            <button class="nota" data-nota="A">A</button>
+            <button class="nota" data-nota="A#">A#</button>
+            <button class="nota" data-nota="B">B</button>
+        </div>
+
+        <!-- Seção de Ajuda -->
+        <div class="ajuda">
+            <h2>Tipos de Acordes Suportados</h2>
+            <ul>
+                <li><strong>Maior</strong>: Ex: C, G</li>
+                <li><strong>Menor</strong>: Ex: Cm, Gm</li>
+                <li><strong>7ª</strong>: Ex: C7, G7</li>
+                <li><strong>Menor 7ª</strong>: Ex: Cm7, Gm7</li>
+                <li><strong>Maior 7ª</strong>: Ex: Cmaj7, Gmaj7</li>
+                <li><strong>Diminuto</strong>: Ex: Cdim, Gdim</li>
+                <li><strong>Menor 7ª com 5ª diminuta</strong>: Ex: Cm7b5, Gm7b5</li>
+                <li><strong>Sus2</strong>: Ex: Csus2, Gsus2</li>
+                <li><strong>Sus4</strong>: Ex: Csus4, Gsus4</li>
+                <li><strong>Aumentado</strong>: Ex: Caug, Gaug</li>
+                <li><strong>9ª</strong>: Ex: C9, G9</li>
+                <li><strong>Menor 9ª</strong>: Ex: Cm9, Gm9</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
